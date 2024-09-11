@@ -1,0 +1,41 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Type selectors */
+h1,h2,h3 {
+    color: blueviolet
+}
+
+/* class selector */
+.div {
+    color: orange;
+}
+
+/* Id selector */
+#para {
+    color:chartreuse;
+}
+
+/* Child selector */
+#para > p {
+    color:darkblue;
+}
+
+/* sibling selector */
+ h1~h2 {
+    color:cadetblue;
+ }
+
+ /* decendant selector */
+ #para span {
+    color:palevioletred;
+ }
+
+ /* adjusant selector */
+ h2 + h3 {
+    color:darkgreen;
+ }
