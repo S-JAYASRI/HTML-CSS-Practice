@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 300px;
+    width: 300px;
+}
+
+h1 {
+    /* font-family styles */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text size default size is 16px */
+    /* prefer percentage(%) (em) (pt)*/
+    font-size: 28px; 
+    /* font thickness -> (100-900) bold, light, medium */
+    font-weight: 600; 
+    /* text center, right, left */
+    text-align: center;
+    /* transform uppercase or lowercase, capitalise */
+    text-transform: capitalize;
+
+}
+
+h3 {
+    /* font-styles like italic, oblic, normal */
+    font-style:italic;
+    /* stretch regular, extended, condensed( different space) */
+    font-stretch: condensed;
+    /* use for underline the text, it is remove the underline */
+    text-decoration: none;
+    /* adjust line height */
+    line-height: 1em;
+    /* letter spaces */
+    letter-spacing: 0.5em;
+}
+
+p {
+    /* word spaces */
+    word-spacing: 1em;
+    text-align: justify;
+}
