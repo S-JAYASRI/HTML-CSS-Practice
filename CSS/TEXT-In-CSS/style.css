@@ -28,8 +28,6 @@ h3 {
     font-style:italic;
     /* stretch regular, extended, condensed( different space) */
     font-stretch: condensed;
-    /* use for underline the text, it is remove the underline */
-    text-decoration: none;
     /* adjust line height */
     line-height: 1em;
     /* letter spaces */
@@ -39,5 +37,40 @@ h3 {
 p {
     /* word spaces */
     word-spacing: 1em;
+    /* to fit in the height and width */
     text-align: justify;
+    /* text front space adjust */
+    text-indent: 2em;
+    /* shadow of words top, right, bottom, left*/
+    text-shadow: 2px 2px 2px grey;
+
+}
+
+div a {
+    /* use for underline the text, it is remove the underline */
+    text-decoration: none;
+
+}
+
+/* pesudo elements */
+
+a:visited {
+    color: rgb(239, 12, 50)
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: peru;
+
+}
+
+a:focus {
+    color:aqua
 }
