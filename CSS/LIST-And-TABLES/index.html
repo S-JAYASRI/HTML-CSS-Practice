@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and Tables</title>
+    <style>
+        body {
+            width: 600px;
+        }
+        ul li {
+            /* unordered list to change type circle, disk, square */
+            list-style-type: square;
+        }
+
+        ol li{
+            /* to change ordered list type change romen, numbers, alpha */
+            list-style-type: upper-alpha;
+        }
+
+        .list {
+            text-align: justify;
+            /* postion para inside or outside changes */
+            list-style-position: inside;
+            /* list-style-image: url(../../images/list-image.png); */
+        }
+
+        table {
+            width: 300px;
+            /* all elements auto center */
+            margin: auto;
+            /* to adjust box spacing */
+            border-spacing: 10px 20px;
+            /* border collapse merge table and separate  */
+            border-collapse: collapse;
+        }
+        th {
+           text-transform: uppercase; 
+           text-align: left;
+           padding: 10px;
+           border-bottom: 2px solid black;
+        }
+        td {
+            padding: 10px;
+            /* all box to set border */
+            border: 1px solid black;
+            
+        }
+
+        .amt {
+            text-align: right;
+        }
+
+        tr:nth-child(even) { 
+            /* even row show differenciate */
+            background-color: antiquewhite;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>List and tables</h2>
+
+    <h3>FRONT END</h3>
+
+    <ul>
+        <li>HTMl</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+    </ul>
+    <h3>BACK END</h3>
+    <ol>
+        <li>PYTHON</li>
+        <li>C</li>
+        <li>JAVA</li>
+    </ol>
+    
+    <ul class="list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis commodi inventore maxime enim earum non? Vero, aliquam assumenda, blanditiis, rem itaque molestiae dicta ipsum ullam aliquid quam impedit vel!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis commodi inventore maxime enim earum non? Vero, aliquam assumenda, blanditiis, rem itaque molestiae dicta ipsum ullam aliquid quam impedit vel!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis commodi inventore maxime enim earum non? Vero, aliquam assumenda, blanditiis, rem itaque molestiae dicta ipsum ullam aliquid quam impedit vel!</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+            <th>Items</th>
+            <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td class="amt">RS. 180</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td class="amt">RS. 120</td>
+            </tr>
+            <tr>
+                <td>Grapes</td>
+                <td class="amt">RS. 100</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td class="amt"> RS . 80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td class="amt">480.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
