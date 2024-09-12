@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries in css</title>
+    <style>
+        .para1 {
+            background-color: rgb(222, 180, 102);
+            
+        }
+        .para2 {
+            background-color: aquamarine;
+
+        }
+        .para3 {
+            background-color: cornflowerblue;
+        }
+        /* media queries for use responsive designs */
+        @media(min-width: 801px) {  
+            /* media screen , all and (print) to target*/
+            .container p {
+                width:30%;
+                float: left;
+                padding: 5px;
+            }
+        }
+
+        /* to use media queries (min width and max width) to prefer mobile first design
+        much better  then desktop*/
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur nihil odio cupiditate omnis enim, et est ex non eligendi earum sit, laudantium qui ipsa. Molestias a, laborum ad, delectus voluptatem non voluptatibus officia alias nulla ducimus placeat tenetur
+        modi ipsum facilis quae iure. Recusandae, corporis reiciendis quaerat fuga quae nam magni voluptates neque rem, maiores eius repudiandae ad. Provident eaque eius repellendus cupiditate incidunt illo, exercitationem at laudantium nobis expedita fugiat consequatur sequi perspiciatis, molestias ducimus assumenda quidem porro, autem magni officiis! Explicabo dolor reprehenderit iure molestias ipsam, consequuntur cumque at suscipit magni soluta eos sit placeat numquam rem.</p>
+        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur nihil odio cupiditate omnis enim, et est ex non eligendi earum sit, laudantium qui ipsa. Molestias a, laborum ad, delectus voluptatem non voluptatibus officia alias nulla ducimus placeat tenetur
+            modi ipsum facilis quae iure. Recusandae, corporis reiciendis quaerat fuga quae nam magni voluptates neque rem, maiores eius repudiandae ad. Provident eaque eius repellendus cupiditate incidunt illo, exercitationem at laudantium nobis expedita fugiat consequatur sequi perspiciatis, molestias ducimus assumenda quidem porro, autem magni officiis! Explicabo dolor reprehenderit iure molestias ipsam, consequuntur cumque at suscipit magni soluta eos sit placeat numquam rem.</p>
+        <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur nihil odio cupiditate omnis enim, et est ex non eligendi earum sit, laudantium qui ipsa. Molestias a, laborum ad, delectus voluptatem non voluptatibus officia alias nulla ducimus placeat tenetur
+            modi ipsum facilis quae iure. Recusandae, corporis reiciendis quaerat fuga quae nam magni voluptates neque rem, maiores eius repudiandae ad. Provident eaque eius repellendus cupiditate incidunt illo, exercitationem at laudantium nobis expedita fugiat consequatur sequi perspiciatis, molestias ducimus assumenda quidem porro, autem magni officiis! Explicabo dolor reprehenderit iure molestias ipsam, consequuntur cumque at suscipit magni soluta eos sit placeat numquam rem.</p>
+        </div>
+</body>
+</html>
