@@ -18,6 +18,12 @@
             text-align: center;
             border: 4px double black;
         }
+        #list {
+            /* visiblity hidden space is occupied*/
+            visibility: collapse;
+            /* display none removes the element from the document flow */
+            display: none;
+        }
         ul li {
             /* display use for to change block level elements or inline elements */
             /* inline, inlilne-block, block, none */
@@ -36,6 +42,7 @@
             border: 30px dashed pink;
             /* insert a images to add borders */
             border-image: url(../../images/border-design.jpg) repeat;
+            overflow: scroll;
         }
     </style>
 </head>
@@ -44,7 +51,7 @@
     <div>
         <ul>
             <li>Home</li>
-            <li>About</li>
+            <li id="list">About</li>
             <li>Contact</li>
         </ul>
     </div>
