@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in css</title>
+</head>
+<style>
+    input:focus {
+        /* changes in button focus */
+        background-color: aquamarine;
+    }
+
+    #radio input{
+        /* to change radio button color and radio button size */
+        accent-color: pink;
+        transform:scale(1.5)
+    }
+</style>
+<body>
+    <div>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <br>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <br>
+    <div id="radio">
+        <input type="radio" name="male" id="male" value="male">
+        <label for="male">Male</label> 
+        <input type="radio" name="female" id="female" value="female">
+        <label for="female">Female</label>
+    </div> 
+</body>
+</html>
