@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes in css</title>
+    <style>
+        body {
+            height: 380px;
+            width: 400px;
+            /* Every elements imaginary box  */
+            border: 2px solid black;
+            /* border corner curves   to use border top,left,right,bottom 
+            you put 4 values 3 and 2 values*/
+            border-radius: 5px; 
+        }
+        h1 {
+            text-align: center;
+            max-height: 200px;
+            max-width: 300px;
+            border: 4px double black;
+        }
+        ul li {
+            display: inline;
+            /* padding space inside the box */
+            padding: 10px;
+            border: 3px dotted blue;
+        }
+        p {
+            max-width: 300px;
+            min-width: 200px;
+            max-height: 400px;
+            /* margin space out side the box */
+            margin-left: 10px;
+            padding: 5px;
+            border: 30px solid pink;
+            /* insert a images to add borders */
+            border-image: url(../../images/border-design.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Boxes in HTML</h1>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem eos quidem corporis nesciunt esse 
+            beatae explicabo ratione porro nulla impedit obcaecati rem aperiam, vitae praesentium excepturi? Molestias odio 
+            similique illo praesentium fugit tenetur? Consequatur ipsam asperiores tempore illum culpa omnis, eaque quaerat 
+            id? Temporibus aliquam similique adipisci corporis soluta?</p>
+    </div>
+</body>
+</html>
