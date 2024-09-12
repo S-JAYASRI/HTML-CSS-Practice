@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float in css</title>
+    <style>
+        /* float left/right float property occupied extra spaces */
+        div p{
+            width: 32%;
+            flex-direction: column;
+            /* to move left side */
+            float: left; 
+            padding: 10px;
+            /* to move right */
+            /* float: right; */
+        }
+        .para1 {
+            background-color: rgb(222, 180, 102);
+            
+        }
+        .para2 {
+            background-color: aquamarine;
+
+        }
+        .para3 {
+            background-color: cornflowerblue;
+        }
+        div p:nth-child(4) {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="para1">ONE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero 
+        numquam aliquam minima corrupti nobis debitis ipsa repudiandae reprehenderit 
+        consequuntur deleniti, dolores molestiae at eos? Sint, sit esse assumenda sapiente 
+        labore eum, quisquam obcaecati adipisci cum corrupti, voluptatum vel nihil illum numquam 
+        magnam doloribus non magni sed ex omnis dolor! Id.</p>
+        <p class="para2"> TWO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero 
+            numquam aliquam minima corrupti nobis debitis ipsa repudiandae reprehenderit 
+            consequuntur deleniti, dolores molestiae at eos? Sint, sit esse assumenda sapiente 
+            labore eum, quisquam obcaecati adipisci cum corrupti, voluptatum vel nihil illum numquam 
+            magnam doloribus non magni sed ex omnis dolor! Id.</p>
+        <p class="para3">THREE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero 
+            numquam aliquam minima corrupti nobis debitis ipsa repudiandae reprehenderit 
+            consequuntur deleniti, dolores molestiae at eos? Sint, sit esse assumenda sapiente 
+            labore eum, quisquam obcaecati adipisci cum corrupti, voluptatum vel nihil illum numquam 
+            magnam doloribus non magni sed ex omnis dolor! Id.</p>
+            <p class="para4">FOUR Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero 
+                numquam aliquam minima corrupti nobis debitis ipsa repudiandae reprehenderit 
+                consequuntur deleniti, dolores molestiae at eos? Sint, sit esse assumenda sapiente 
+                labore eum, quisquam obcaecati adipisci cum corrupti, voluptatum vel nihil illum numquam 
+                magnam doloribus non magni sed ex omnis dolor! Id.</p>
+    </div>
+</body>
+</html>
