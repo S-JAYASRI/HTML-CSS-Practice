@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in css</title>
+    <style>
+        body{
+            position: static;
+            height: 1000px;
+        }
+        .box1 {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            /* postion: relative, obsolute, static, fixed */
+            /* to set position offset is recommended (top,bottom,left,right) */
+            position: relative;
+            left: 50px;
+        }
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(210, 65, 65);
+            /* parent non static position occupied */
+            position: absolute;
+            /* position fixed the same position */
+            position: fixed;
+            /* bottom 0px the box is sticky position */
+            position: sticky;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo
+             rem quidem, sequi iste illum debitis odio aliquid pariatur consectetur vel 
+             ab maiores quisquam sed similique voluptate eveniet ipsam? Iusto voluptatibus 
+             eos repellendus repudiandae libero quae amet ipsa architecto quam laborum dolore id, 
+             ad voluptas? Tempore assumenda qui eos ipsum.</p>
+             <br>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo
+                rem quidem, sequi iste illum debitis odio aliquid pariatur consectetur vel 
+                ab maiores quisquam sed similique voluptate eveniet ipsam? Iusto voluptatibus 
+                eos repellendus repudiandae libero quae amet ipsa architecto quam laborum dolore id, 
+                ad voluptas? Tempore assumenda qui eos ipsum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo
+                    rem quidem, sequi iste illum debitis odio aliquid pariatur consectetur vel 
+                    ab maiores quisquam sed similique voluptate eveniet ipsam? Iusto voluptatibus 
+                    eos repellendus repudiandae libero quae amet ipsa architecto quam laborum dolore id,                     
+                    ad voluptas? Tempore assumenda qui eos ipsum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo
+                    rem quidem, sequi iste illum debitis odio aliquid pariatur consectetur vel 
+                    ab maiores quisquam sed similique voluptate eveniet ipsam? Iusto voluptatibus 
+                    eos repellendus repudiandae libero quae amet ipsa architecto quam laborum dolore id,                     
+                    ad voluptas? Tempore assumenda qui eos ipsum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo
+                    rem quidem, sequi iste illum debitis odio aliquid pariatur consectetur vel 
+                    ab maiores quisquam sed similique voluptate eveniet ipsam? Iusto voluptatibus 
+                    eos repellendus repudiandae libero quae amet ipsa architecto quam laborum dolore id,                     
+                    ad voluptas? Tempore assumenda qui eos ipsum.</p>
+                <br>
+            
+                
+    </div>
+</body>
+</html>
