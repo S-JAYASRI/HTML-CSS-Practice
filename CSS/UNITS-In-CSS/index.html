@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in css</title>
+    <style>
+        h2 {
+            font-size: 25px;
+        }
+        .para1 {
+            /* em to size increase in relative element size 
+            the relative element 16 px that em 16+16 = 32px the 
+            em font size add by relative element size
+             */
+            font-size: 1.5em;
+            /* viewport height, viewport width 
+            to use responsive designs much helpful 
+            vmax, vmin --- maximum height, width adjusted */
+            height: 20vh;
+            width: 50vw;
+        }
+        .para2 {
+            /* rem size that takes root element size it means body element size */
+            font-size: 2rem;
+            /* percentage ...that take parent width */
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Units in CSS</h2>
+    <div class="para1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi delectus quis fugit odit quos laborum eaque non ratione culpa velit obcaecati debitis, ipsum, consequatur, aliquam facere expedita ipsa porro dolore? Laboriosam, et quas molestiae architecto dolorem est quo, odio provident, possimus non modi nulla hic recusandae vero omnis molestias soluta?</p>
+    </div>
+    <div class="para2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi delectus quis fugit odit quos laborum eaque non ratione culpa velit obcaecati debitis, ipsum, consequatur, aliquam facere expedita ipsa porro dolore? Laboriosam, et quas molestiae architecto dolorem est quo, odio provident, possimus non modi nulla hic recusandae vero omnis molestias soluta?</p>
+    </div>
+</body>
+</html>
