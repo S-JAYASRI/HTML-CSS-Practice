@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients in css</title>
+    <style>
+        .box1 {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            /* linear gradient square shape to add multiple colors */
+            /* you set to left, top, bottom, right and add percentage(%) */
+            background: linear-gradient(to left, pink,orange,purple);
+        }
+        .box2 {
+            height: 300px;
+            width: 300px;
+            position: relative;
+            left: 400px;
+            /* you need solid coloursto use this*/
+            background: radial-gradient(yellow 30%, yellow,green 30%,green);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
