@@ -6,8 +6,7 @@
     <title>Flex in css</title>
     <style>
         .outerbox {
-            width: 380px;
-            height: 300px;
+            height: 500px;
             display: flex;
             flex-direction: row;
             /* flex-star, end */
@@ -18,13 +17,31 @@
             justify-content: space-around;
             /* flex start end, center , start*/
             align-items: center;
+            /* wrap adjusted space */
+            flex-wrap: wrap;
         }
         
         .outerbox div {
-            height: 300px;
+            height: 100px;
             width: 100px;
             border: 2px solid white;
             background-color: darkblue;
+        }
+        .outerbox .box2 {
+            /* particular box position moves to use align self */
+            /* align-self: flex-start; */
+            flex-grow: 2;
+            /* take doubled sizes */
+            flex-basis: 0;
+        }
+        .outerbox .box1 {
+            /* flex: grow shrink basis */
+            flex-shrink: 0;
+        }
+        .outerbox .box4 {
+            /* extra spaces use */
+            flex-grow: 1;
+            flex-basis: 0;
         }
         .div {
             background-color: aquamarine;
