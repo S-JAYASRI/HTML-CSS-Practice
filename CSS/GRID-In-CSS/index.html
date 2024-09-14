@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in css</title>
+    <style>
+        body {
+            background-color: bisque;
+
+        }
+        
+        .startbox {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .box {
+            background-color: cornflowerblue;
+            font-size: 4rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .outerbox {
+            /* display two dimentional layout*/
+            display: grid;
+            /* fr fractional (30% 30% 30%)  you set constent value (auto)
+            to use minmax(200px, 1fr) 2fr 1fr*/
+            grid-template-columns: 200px 300px auto;
+            /* gap for single para */
+            column-gap: 20px;
+            row-gap: 20px;
+            gap: 20px;
+            /* repeat first columns, then size px or percentage */
+            grid-template-columns: repeat(4,1fr);
+            /* fixed column item */
+            grid-template-columns: repeat(minmax(300px, 1fr));
+            /* responsive columns */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill(minmax(300px, 2fr)));
+            /* row grind */
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+        .para{
+            padding: 20px;
+            background-color:darkgrey;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="startbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+    <div class="outerbox">
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis similique placeat tempora quasi, atque quae unde deleniti, dolorum magnam, reiciendis officia eum ut accusamus dignissimos repellendus. Facere, harum? Voluptatem.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
